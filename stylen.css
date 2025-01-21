@@ -1,0 +1,103 @@
+body{
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 5rem;
+   color:rgb(255, 255, 255);
+   background:rgb(141, 39, 39);
+   text-align: center;
+   padding: 0;
+   background-image: url("img/comicn.png");
+   background-repeat: repeat;
+   background-position: -30px 30px;
+   background-size: 10em;
+}
+
+header{
+    text-align: center;
+    background-color: #8D2727;
+    width: fit-content;
+    margin: auto;
+    padding: 1rem;
+}
+
+p{
+    background-color: #8D2727;
+    padding: 1rem;
+
+}
+
+h5{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+/* link peramaters */
+a {
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+a:hover{
+    opacity: 0.5;
+    color: rgb(255, 255, 255)
+}
+
+#img {
+    width: 35rem;
+}
+
+#text {
+    text-align: left;
+	font-size: 1.5rem;
+    height:100vh;
+    margin: 5rem;
+
+}
+
+/* classifying ID from the divs */
+#parent{
+    padding: 50px;
+}
+
+#basic-grid{
+    display: grid;
+	grid-template: 1fr / 1fr 2fr;
+    gap: 10px;
+}
+/* classes = . and id = # */
+.grid-item{
+    padding: 20px;
+    text-align: center;
+	color: rgb(0, 0, 0);
+	background-color: rgb(224, 189, 132);
+	
+}
+
+
+
+/* GRID SPAN */
+
+.grid-span{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.grid-span div{
+    background-color: brown;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgb(255, 196, 0);
+}
+
+.grid-span .span-2, .span-3{
+    grid-column: span 2;
+}
+
+.grid-span .span-3{
+    grid-column: span 3;
+}
+
+
+

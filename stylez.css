@@ -1,0 +1,362 @@
+body{
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 5rem;
+	color:rgb(0, 0, 0);
+	background-image: url("img/comicbg.png"), url("img/comicbg.png");
+	text-align: center;
+		background-image: url("img/comicbg.png");
+		background-repeat: repeat;
+		background-position: -15px 0;
+		background-size: 9em;
+}
+
+
+
+header{
+    padding-bottom: 3rem;
+}
+
+h5{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+/*
+.buttons {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+	align-items: center;
+    justify-content: space-around;
+    padding-inline: 11rem;
+    
+}
+
+
+
+.button {
+	appearance: none;
+	border: 10px;
+	outline: none;
+	background: none;
+	cursor: pointer;
+
+    font-family: 'Courier New', Courier, monospace;
+	font-size: 9rem;
+	font-weight: 100;
+	text-transform: uppercase;
+
+	padding: 4rem 5rem;
+	border-radius: 2rem;
+	background-color: rgb(159, 159, 159);
+	margin-bottom: 2rem;
+}
+	*/
+
+/* ONE nasty*/
+
+#one {
+	position: relative;
+    overflow: hidden;
+
+}
+
+#one span {
+	position: relative;
+	z-index: 2;
+}
+
+#one:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+	width: 0;
+	height: 0;
+	background-color: rgb(231, 51, 51);
+	border-radius: 999px;
+	transition: 0.8s ease-out;
+}
+
+#one:hover:after {
+	width: 200%;
+	padding-top: 200%;
+}
+
+/* TWO chill */
+
+#two {
+	position: relative;
+    overflow: hidden;
+}
+
+#two span {
+	position: relative;
+	z-index: 2;
+}
+
+#two:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+	width: 0;
+	height: 0;
+	background-color: rgb(51, 198, 231);
+	border-radius: 999px;
+	transition: 0.8s ease-out;
+}
+
+#two:hover:after {
+	width: 200%;
+	padding-top: 200%;
+}
+
+/* three queer */
+
+#three {
+	position: relative;
+    overflow: hidden;
+    font-size: 6rem;
+
+
+}
+
+#three span {
+	position: relative;
+	z-index: 2;
+}
+
+#three:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+	width: 0;
+	height: 0;
+	background-color: rgb(140, 75, 171);
+	border-radius: 999px;
+	transition: 0.8s ease-out;
+}
+
+#three:hover:after {
+	width: 200%;
+	padding-top: 200%;
+}
+
+/* four fan */
+
+#four {
+	position: relative;
+    overflow: hidden;
+
+}
+
+#four span {
+	position: relative;
+	z-index: 2;
+}
+
+#four:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+	width: 0;
+	height: 0;
+	background-color: rgb(46, 184, 85);
+	border-radius: 999px;
+	transition: 0.8s ease-out;
+}
+
+#four:hover:after {
+	width: 200%;
+	padding-top: 200%;
+}
+
+#img {
+    width: 35rem;
+}
+
+#text {
+    text-align: left;
+	font-size: 2rem;
+    height:100vh;
+}
+
+/* IMAGE CHANGING!! */
+
+/*nasty*/
+.nudo {
+
+    background-image: url("img/nasty.png");
+    background-size: cover;
+	cursor:pointer;
+	transition-property: background-image;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+}
+
+.nudo:hover {
+    background-image: url("img/nastyred.png");
+}
+
+
+/*chill*/
+.sudo {
+
+    background-image: url("img/chill.png");
+    background-size: cover;
+    transition: background-image;
+	cursor:pointer;
+}
+
+.sudo:hover {
+    background-image: url("img/chillblue.png");
+}
+
+/*fan*/
+.fudo {
+
+    background-image: url("img/FAN.png");
+    background-size: cover;
+    transition: background-image;
+	cursor:pointer;
+}
+
+.fudo:hover {
+    background-image: url("img/fangrn.png");
+}
+
+/*queer*/
+.qudo {
+
+    background-image: url("img/queer.png");
+    background-size: cover;
+    transition: background-image 0.3s ease-in-out;
+	cursor:pointer;
+}
+
+.qudo:hover {
+    background-image: url("img/queerprpl.png");
+}
+
+
+
+/* FLEXBOX COPY PASTED SHITTT? 
+*{
+    box-sizing:border-box;
+}
+
+#parent{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    gap: 10px;
+    padding:20px;
+    width: 100%
+}
+/* columns 
+
+#comics, #dogs, #text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    text-align: left;
+    height:100vh;
+    overflow: scroll;
+	
+    
+}
+
+.catimg, .dogimg {
+    width: 100%;
+    height: auto;
+
+    border-radius: 30px;
+    
+}
+
+#intro, p {
+    font-size: 1.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer {
+    height: 30px;
+    padding: 20px;
+    color: black;
+    text-align: left;
+    margin-bottom: 10px;
+}
+*/
+
+/* FLEX GRID !!*/
+
+
+
+
+/* classifying ID from the divs */
+#parent{
+    padding: 50px;
+}
+
+#basic-grid{
+    display: grid;
+	grid-template: 1fr / 1fr 2fr;
+    gap: 10px;
+}
+/* classes = . and id = # */
+.grid-item{
+    padding: 20px;
+    text-align: center;
+	color: rgb(0, 0, 0);
+	background-color: rgb(242, 239, 156);
+	
+}
+
+
+
+/* GRID SPAN */
+
+.grid-span{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.grid-span div{
+    background-color: brown;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid yellow;
+}
+
+.grid-span .span-2, .span-3{
+    grid-column: span 2;
+}
+
+.grid-span .span-3{
+    grid-column: span 3;
+}
+
+
+
