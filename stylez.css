@@ -26,38 +26,6 @@ a {
     
 }
 
-/*
-.buttons {
-	display: flex;
-	flex-direction: row;
-    flex-wrap: wrap;
-	align-items: center;
-    justify-content: space-around;
-    padding-inline: 11rem;
-    
-}
-
-
-
-.button {
-	appearance: none;
-	border: 10px;
-	outline: none;
-	background: none;
-	cursor: pointer;
-
-    font-family: 'Courier New', Courier, monospace;
-	font-size: 9rem;
-	font-weight: 100;
-	text-transform: uppercase;
-
-	padding: 4rem 5rem;
-	border-radius: 2rem;
-	background-color: rgb(159, 159, 159);
-	margin-bottom: 2rem;
-}
-	*/
-
 
 
 /* ONE nasty*/
@@ -207,10 +175,7 @@ a {
     background-image: url("img/nasty.png");
     background-size: cover;
 	cursor:pointer;
-	transition-property: background-image;
-    transition-duration: 3s;
-    transition-timing-function: ease;
-    transition-delay: 1s;
+	transition: background-image 0.3s ease-in-out;
 }
 
 .nudo:hover {
@@ -223,7 +188,7 @@ a {
 
     background-image: url("img/chill.png");
     background-size: cover;
-    transition: background-image;
+    transition: background-image 0.3s ease-in-out;
 	cursor:pointer;
 }
 
@@ -236,7 +201,7 @@ a {
 
     background-image: url("img/FAN.png");
     background-size: cover;
-    transition: background-image;
+    transition: background-image 0.3s ease-in-out;
 	cursor:pointer;
 }
 
@@ -256,61 +221,6 @@ a {
 .qudo:hover {
     background-image: url("img/queerprpl.png");
 }
-
-
-
-/* FLEXBOX COPY PASTED SHITTT? 
-*{
-    box-sizing:border-box;
-}
-
-#parent{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap:wrap;
-    gap: 10px;
-    padding:20px;
-    width: 100%
-}
-/* columns 
-
-#comics, #dogs, #text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    flex: 1;
-    text-align: left;
-    height:100vh;
-    overflow: scroll;
-	
-    
-}
-
-.catimg, .dogimg {
-    width: 100%;
-    height: auto;
-
-    border-radius: 30px;
-    
-}
-
-#intro, p {
-    font-size: 1.5rem;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-footer {
-    height: 30px;
-    padding: 20px;
-    color: black;
-    text-align: left;
-    margin-bottom: 10px;
-}
-*/
-
-/* FLEX GRID !!*/
 
 
 
